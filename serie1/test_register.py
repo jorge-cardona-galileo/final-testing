@@ -1,9 +1,10 @@
 from playwright.sync_api import Page, expect, sync_playwright
 import time
-
-URL = "https://ecommerce-playground.lambdatest.io/"
 import random
 import string
+
+URL = "https://ecommerce-playground.lambdatest.io/"
+
 
 def generate_random_email():
     local_part_length = random.randint(5, 15)  # Random length between 5 and 15 characters
